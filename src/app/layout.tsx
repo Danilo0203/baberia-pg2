@@ -13,8 +13,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" suppressHydrationWarning>
-      <body className={`${poppins.className} antialiased`}>
+    <html lang="es" className="dark" suppressHydrationWarning>
+      <body
+        className={`${poppins.className} bg-background text-foreground antialiased light`}
+      >
         <Providers>{children}</Providers>
       </body>
     </html>
